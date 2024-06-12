@@ -1,4 +1,4 @@
-Shader "Holistics/MyFirstShader"
+Shader "Holistic/MyFirstShader"
 {
     Properties
     {
