@@ -31,6 +31,7 @@ Shader "Holistic/AllProps"
         void surf (Input IN, inout SurfaceOutput o)
         {
             o.Albedo = (tex2D(_Texture, IN.uv_Texture) * _Range).rgb;
+            o.Emission = texCUBE(_Cube, IN.worldRefl).rgb;
         }
         ENDCG
     }
